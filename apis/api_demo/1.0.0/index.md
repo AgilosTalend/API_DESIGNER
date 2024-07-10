@@ -14,8 +14,8 @@ api-definition:
     - url: "https://2ig912ru1eka29u.eu.api-mocks.com"
       description: "This is your API mock endpoint. When called, it will simulate the behavior of your API."
       isPublished: true
-    - url: "http://www.das.com"
-      description: "Das"
+    - url: "http://www.agilos.com"
+      description: "Agilos"
       isPublished: true
     mediaTypes:
     - "application/json"
@@ -324,7 +324,7 @@ api-tryin: |-
         "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
       },
       "variables" : {
-        "05150db7-e293-47b8-861a-0dc69a5ff23a" : {
+        "77a530cf-883d-4b17-b9f9-6f6c5a77f48b" : {
           "name" : "BaseUrl",
           "value" : "https://2ig912ru1eka29u.eu.api-mocks.com",
           "enabled" : true,
@@ -337,9 +337,9 @@ api-tryin: |-
         "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
       },
       "variables" : {
-        "7cc7ba68-4742-4fc2-9062-5b558d305b1b" : {
+        "335e924c-d31b-4e9f-b2a8-6df5261236d3" : {
           "name" : "BaseUrl",
-          "value" : "http://www.das.com",
+          "value" : "http://www.agilos.com",
           "enabled" : true,
           "private" : false
         }

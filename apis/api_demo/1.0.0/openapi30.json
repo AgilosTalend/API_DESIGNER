@@ -10,8 +10,8 @@
     "url" : "https://2ig912ru1eka29u.eu.api-mocks.com",
     "description" : "This is your API mock endpoint. When called, it will simulate the behavior of your API."
   }, {
-    "url" : "http://www.das.com",
-    "description" : "Das"
+    "url" : "http://www.agilos.com",
+    "description" : "Agilos"
   } ],
   "paths" : {
     "/Customers" : {
