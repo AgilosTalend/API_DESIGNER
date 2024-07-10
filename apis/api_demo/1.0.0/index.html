@@ -1,0 +1,1148 @@
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta data-indicator-element-id="dhcIndicator" name="dhc-aware-page" />
+      <meta name="try-in-tester-api-context" content="{&#34;etnResource6Url&#34;:&#34;/apitesterformat6.json&#34;}" />
+      <title>API_DEMO</title>
+      <meta content="API_DEMO" property="og:title">
+    
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/apis/api_demo/1.0.0/">
+
+
+<link rel="icon" href="../../../img/brand-logo.png" sizes="196x196" />
+<link rel="apple-touch-icon" href="../../../img/brand-logo.png" sizes="196x196" />
+
+<link rel="stylesheet" href="../../../css/full.min.e55d9236833ff9b3819e293fc402c2b5454b9015e74e6521a4916948975ee1f8.css" media="all" />
+
+
+<meta name="theme-color" content="#fafafa" />
+</head>
+	<body class="api-reference">
+		<header class="header">
+
+
+<ul class="header__menu">
+  <li class="header__item">
+    <a class="header__link header__brand " href="../../../" >
+      <span class="sr-only">Home</span>
+      <span>API Portal</span>
+    </a>
+  </li>
+<li class="header__item">
+    <a href="../../../getting-started/" class="header__link"  >Getting started</a>
+  </li>
+<li class="header__item">
+    <a href="../../../apis/" class="header__link header__section--active"  >APIs</a>
+  </li>
+</ul>
+</header>
+    <aside class="left-panel">
+        
+
+<div class="left-panel__wrapper">
+  <div class="api__general">
+    <h1 class="left-panel__api-title">API_DEMO</h1>
+
+
+<div class="dropdown api__version"><span class="btn btn__version api__version--selected">1.0.0</span>
+</div>
+</div>
+  <div class="api__action">
+    
+<div class="try-in-tester js-try-in-tester">
+  <button class="try-in-tester__action js-try-in-tester--action btn btn--primary js-api-try-in-tester try-in-tester__action--with-dropdown "
+          type="button">
+    Try in API Tester
+    (2)</button>
+  <button title="Select your endpoint" class="try-in-tester__dropdown js-dropdown btn btn--primary"
+    aria-controls="endpoints-list"
+    aria-label="Select your endpoint"
+    aria-haspopup="true"
+    aria-expanded="false"
+    type="button">
+      <svg viewBox="0 0 16 16" aria-hidden="true" class="dropdown__icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg>
+    </button>
+    <div id="endpoints-list"
+         role="menu"
+         class="dropdown__content dropdown__content--endpoints "
+         hidden>
+      <button title="https://2ig912ru1eka29u.eu.api-mocks.com"
+                data-endpoint-url="https://2ig912ru1eka29u.eu.api-mocks.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">https://2ig912ru1eka29u.eu.api-mocks.com</span></button>
+      <button title="http://www.das.com"
+                data-endpoint-url="http://www.das.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">http://www.das.com</span></button>
+      <a role="menuitem"
+         class="dropdown__item dropdown__item--endpoints-link-description"
+         href="#endpoints">
+        Go to endpoint descriptions</a>
+    </div>
+  </div>
+
+
+<div class="dropdown">
+  <button class="js-dropdown btn btn--primary" aria-controls="download" aria-haspopup="true" aria-expanded="false" type="button">
+    Download<svg viewBox="0 0 16 16" aria-hidden="true" class="dropdown__icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg>
+  </button>
+  <div id="download" role="menu" class="dropdown__content" hidden>
+    <a href="../../../apis/api_demo/1.0.0/openapi30.json" role="menuitem" class="dropdown__item" tabindex="-1" download="api_demo-1.0.0-openapi30.json">OAS 3</a>
+    <a href="../../../apis/api_demo/1.0.0/swagger20.json" role="menuitem" class="dropdown__item" tabindex="-1" download="api_demo-1.0.0-swagger20.json">Swagger 2</a>
+    </div>
+  </div>
+</div>
+
+  <form class="search-form">
+    <label class="search-form__label" for="filter">
+      <svg class="search-form__icon" aria-hidden="true" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.5 14C3.9 14 1 11.1 1 7.5S3.9 1 7.5 1 14 3.9 14 7.5 11.1 14 7.5 14zm0-11C5 3 3 5 3 7.5S5 12 7.5 12 12 10 12 7.5 10 3 7.5 3zm6 9c-.4.6-.9 1.1-1.5 1.5l2.5 2.5 1.5-1.5-2.5-2.5z"></path></svg>
+      <span class="sr-only">Filter</span>
+    </label>
+    <input class="search-form__field js-filter" id="filter" type="search" placeholder="Filter" />
+  </form>
+
+  <hr />
+
+  <nav class="api__nav" aria-label="API content">
+    <ul class="api-toc js-api-toc">
+<li>
+        <details open>
+          <summary class="api-toc__section-title"><a href="#section_objects">Objects</a></summary>
+  <ul class="api-toc__content">
+    <li class="api-toc__item api-toc__item--datatype"><a href="#type_customer">Customer</a></li>
+    <li class="api-toc__item api-toc__item--datatype"><a href="#type_customers">Customers</a></li>
+    </ul>
+</details>
+      </li>
+<li>
+        <details open>
+          <summary class="api-toc__section-title"><a href="#section_operations">Operations</a></summary>
+  <ul class="api-toc__content">
+    
+  <li class="api-toc__item api-toc__item--request-get"><a href="#operation_list-customers">List Customers</a></li>
+        
+  <li class="api-toc__item api-toc__item--request-post"><a href="#operation_add-customer">Add Customer</a></li>
+        </ul>
+</details>
+      </li>
+<li>
+        <details open>
+          <summary class="api-toc__section-title"><a href="#section_about">About</a></summary>
+  <ul class="api-toc__content">
+    <li class="api-toc__item_text"><a href="#text_designed-with-talend-api-designer">Designed with Talend API Designer</a></li>
+     </ul>
+</details>
+      </li>
+</ul>
+  </nav>
+</div>
+
+</aside>
+      <main id="content">
+        
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+	<ol class="breadcrumb__list">
+		<li class="breadcrumb__item"><a href="../../../" class="breadcrumb__element">Home</a></li>
+    <li class="breadcrumb__item"><span class="breadcrumb__separator" aria-hidden="true"> / </span><a href="../../../apis/" class="breadcrumb__element">APIs</a></li>
+
+  
+  <li class="breadcrumb__item"><span class="breadcrumb__separator" aria-hidden="true"> / </span><a aria-current="page" href="../../../apis/api_demo/1.0.0/" class="breadcrumb__element">API_DEMO</a></li>
+</ol>
+</nav>
+
+
+<h2 class="api-reference__api-title" id="top">API_DEMO</h2>
+<div class="api__content_description wysiwyg">No description</div>
+
+<dl class="definition contact">
+  </dl>
+<div class="definition">
+      <h3 id="mediatypes">Media type</h3>
+      <div>application/json</div>
+    </div>
+<div class="definition">
+      <h3 id="endpoints">Endpoints</h3>
+      <ul class="endpoints">
+        <li class="endpoint__value">
+          <span class="endpoint__url">https://2ig912ru1eka29u.eu.api-mocks.com</span>
+          <div class="endpoint__description wysiwyg">This is your API mock endpoint. When called, it will simulate the behavior of your API.</div></li>
+        <li class="endpoint__value">
+          <span class="endpoint__url">http://www.das.com</span>
+          <div class="endpoint__description wysiwyg">Das</div></li>
+        </ul>
+    </div>
+<div class="definition">
+      <h3 id="global-security">Global security</h3>
+      <p class="note">These security schemes apply to the entire API</p>
+      <div>
+        
+
+<ul class="global-security">
+
+<li class="global-security__type">No authentication</li>
+</ul>
+</div>
+    </div>
+
+<hr class="separator"/>
+    <section aria-labelledby="section_objects">
+      <h2 id="section_objects">Objects</h2>
+  
+
+<section id="type_customer_anchor" class="datatype" aria-labelledby="type_customer">
+	<div class="data-type__content">
+		<div class="data-type__header">
+			<h3 id="type_customer">Customer</h3>
+		</div>
+		<div class="definition__data-type definition">
+			<div id="tooltip_type_customer" class="js-tooltip-content" >
+<div class="data-type__description wysiwyg">Customer informations</div>
+	
+
+
+
+<div class="data-type__object-title">Object</div>
+
+
+<table>
+  <thead class="sr-only">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Type</th>
+      <th scope="col">Attributes and examples</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">ID</th>
+	<td class="wysiwyg">Customer ID</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+integer</span>
+<span class="badge badge--warn">Required</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">NAME</th>
+	<td class="wysiwyg">Customer Name</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge badge--warn">Required</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">LAST NAME</th>
+	<td class="wysiwyg">Customer Last Name</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge badge--warn">Required</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">MAIL</th>
+	<td class="wysiwyg">Customer Email</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">PHONE</th>
+	<td class="wysiwyg">Customer Phone</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">STREET_NUMBER</th>
+	<td class="wysiwyg">Customer Adress Street Number</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">CITY</th>
+	<td class="wysiwyg">Customer City</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">DEPARTMENT</th>
+	<td class="wysiwyg">Customer Department</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">REGION</th>
+	<td class="wysiwyg">Customer Region</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">COUNTRY</th>
+	<td class="wysiwyg">Customer Country</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">POSTAL_CODE</th>
+	<td class="wysiwyg">Customer Zip Code</td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+integer</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="definition-example">
+				<div id="type_customer_c518a5b841eb57f96176a38786166cf2" class="definition-example__title"><span>Customer</span></div>
+				<div role="region" tabindex="0" class="code-container" aria-labelledby="type_customer_c518a5b841eb57f96176a38786166cf2">
+
+
+	
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;000001&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;LAST NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+			</div>
+</div>
+	</div>
+</section>
+
+
+<section id="type_customers_anchor" class="datatype" aria-labelledby="type_customers">
+	<div class="data-type__content">
+		<div class="data-type__header">
+			<h3 id="type_customers">Customers</h3>
+		</div>
+		<div class="definition__data-type definition">
+			<div id="tooltip_type_customers" class="js-tooltip-content" >
+<div class="data-type__description wysiwyg">List Customers</div>
+	
+
+
+
+<div class="data-type__object-title">Object</div>
+
+
+<table>
+  <thead class="sr-only">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Type</th>
+      <th scope="col">Attributes and examples</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+      
+
+<tr class="data-type__parameter">
+  <th class="data-type__parameter-type-label" scope="row" aria-describedby="bdc28f40dae52610814d9f020b183fb9">Customers</th>
+  <td></td>
+  <td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+array of Object
+</span>
+    <span class="badge">Optional</span></td>
+  <td class="data-type__parameter-attributes-examples">
+
+
+<table id="bdc28f40dae52610814d9f020b183fb9">
+  <caption class="data-type-title sr-only">Datatype details</caption>
+  <thead class="sr-only">
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col">Attributes and examples</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class="data-type__parameter array-parameter--description">
+      <th scope="row">array</th>
+      <td></td>
+      <td class="data-type__parameter-attributes-examples">
+  
+
+
+
+</td>
+    </tr>
+<tr class="data-type__parameter array-parameter--description">
+      <th scope="row" aria-describedby="5f37db4312bca4a14614cba0fa70c51d">Object</th>
+      <td></td>
+      <td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+    </tr>
+    
+    <tr class="data-type__parameter--subtype">
+      <td colspan="3">
+
+<table id="5f37db4312bca4a14614cba0fa70c51d">
+  <thead class="sr-only">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Type</th>
+      <th scope="col">Attributes and examples</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">ID</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">NAME</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">LAST_NAME</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">MAIL</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">PHONE</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">STREET_NUMBER</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">CITY</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">DEPARTMENT</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">REGION</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">COUNTRY</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+
+      
+
+
+<tr class="data-type__parameter">
+	<th class="data-type__parameter-type-label" scope="row">POSTAL_CODE</th>
+	<td class="wysiwyg"></td>
+	<td class="data-type__parameter-type">
+    <span class="parameter-type">
+      
+
+string</span>
+<span class="badge">Optional</span></td>
+	<td class="data-type__parameter-attributes-examples">
+
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+    </tr>
+    </tbody>
+</table>
+
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="definition-example">
+				<div id="type_customers_c561c857f6f16a377b88852696a411eb" class="definition-example__title"><span>Customers</span></div>
+				<div role="region" tabindex="0" class="code-container" aria-labelledby="type_customers_c561c857f6f16a377b88852696a411eb">
+
+
+	
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;Customers&#34;</span><span class="p">:[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1234&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Alice&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;11&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1000&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Lina&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Henri&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Van Den Berghe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Saint Gilles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1060&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+			</div>
+</div>
+	</div>
+</section>
+</section>
+<hr class="separator"/>
+    <section aria-labelledby="section_operations">
+      <h2 id="section_operations">Operations</h2>
+  
+
+<section id="operation_list-customers_anchor" class="operation" aria-labelledby="operation_list-customers">
+	<div class="operation__content">
+        <h3 id="operation_list-customers">List Customers</h3>
+        <span class="operation--get operation--default">GET</span> <span class="operation__url">/Customers</span>
+	<div class="operation__description wysiwyg">List All customers</div><div class="definition__content definition">
+			<h4>Response</h4>
+		
+		
+				
+					
+
+<div class="response">
+	<details class="response__detail" open="">
+		<summary class="response__type"><span><span class="badge badge--2xx">200</span>Status 200</span><svg viewBox="0 0 16 16" aria-hidden="true" class="response__type--icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg></summary>
+		<div class="response-description wysiwyg">Result OK</div>
+
+
+
+<div class="response__content">
+    <span class="response__body">Body</span>
+    <div class="dropdown">
+    <span class="response__mimetype">application/json</span></div>
+</div>
+
+    <div id="body_9f3b1878b56e2495bc488e53b0c074bcapplicationjson" class="body__content" >
+    <div>Return All Customers</div><div class="body__content">
+
+
+
+
+<a href="#type_customers">Customers</a>
+<button type="button" class="btn--naked tooltip js-tooltip-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="tooltip_type_customers">
+	<span class="sr-only">Customers details</span>
+	<svg class="tooltip__icon" viewBox="0 0 16 16" aria-hidden="true"><g><path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M7.88888889,6.11262338 C7.39796911,6.11262338 7,6.51059249 7,7.00151227 L7,11.4459567 C7,11.9368765 7.39796911,12.3348456 7.88888889,12.3348456 C8.37980867,12.3348456 8.77777778,11.9368765 8.77777778,11.4459567 L8.77777778,7.00151227 C8.77777778,6.51059249 8.37980867,6.11262338 7.88888889,6.11262338 Z M7.88888889,3.44293218 C7.39796911,3.44293218 7,3.84090129 7,4.33182107 C7,4.82274084 7.39796911,5.22070996 7.88888889,5.22070996 C8.37980867,5.22070996 8.77777778,4.82274084 8.77777778,4.33182107 C8.77777778,3.84090129 8.37980867,3.44293218 7.88888889,3.44293218 Z"></path></g></svg>
+</button>
+</div>
+        <div class="definition-example">
+        <div id="bodySample_9f3b1878b56e2495bc488e53b0c074bcapplicationjson" class="definition-example__title">
+            <span>Status 200</span><span class="definition-example__mimetype">
+                    application/json</span>
+            </div>
+        <div role="region" tabindex="0" class="code-container" aria-labelledby="bodySample_9f3b1878b56e2495bc488e53b0c074bcapplicationjson">
+
+
+	
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;Customers&#34;</span><span class="p">:[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1234&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Alice&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;11&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1000&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Lina&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Henri&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;LAST_NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Van Den Berghe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Saint Gilles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1060&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+    </div>
+        </div>
+    </details>
+</div>
+</div>
+	</div>
+	<div class="operation__content-info operation__content-info--odd">
+		
+<div class="try-in-tester js-try-in-tester">
+  <button class="try-in-tester__action js-try-in-tester--action btn btn--primary js-operation-try-in-tester try-in-tester__action--with-dropdown "
+          data-operation-id="92a3d96b-0a8c-4d09-9693-4a54e26b73de" type="button">
+    Try in API Tester
+    (2)</button>
+  <button title="Select your endpoint" class="try-in-tester__dropdown js-dropdown btn btn--primary"
+    aria-controls="endpoints-list"
+    aria-label="Select your endpoint"
+    aria-haspopup="true"
+    aria-expanded="false"
+    type="button">
+      <svg viewBox="0 0 16 16" aria-hidden="true" class="dropdown__icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg>
+    </button>
+    <div id="endpoints-list"
+         role="menu"
+         class="dropdown__content dropdown__content--endpoints dropdown__content--endpoints-operation "
+         hidden>
+      <button title="https://2ig912ru1eka29u.eu.api-mocks.com"
+                data-endpoint-url="https://2ig912ru1eka29u.eu.api-mocks.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">https://2ig912ru1eka29u.eu.api-mocks.com</span></button>
+      <button title="http://www.das.com"
+                data-endpoint-url="http://www.das.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">http://www.das.com</span></button>
+      <a role="menuitem"
+         class="dropdown__item dropdown__item--endpoints-link-description"
+         href="#endpoints">
+        Go to endpoint descriptions</a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<section id="operation_add-customer_anchor" class="operation" aria-labelledby="operation_add-customer">
+	<div class="operation__content">
+        <h3 id="operation_add-customer">Add Customer</h3>
+        <span class="operation--post operation--default">POST</span> <span class="operation__url">/Customer</span>
+	<div class="definition__content definition">
+			<div>
+				<h4>Request</h4>
+		
+
+
+
+
+
+</div>
+		
+
+<div class="request__content">
+    <span class="request__body">Body</span>
+    <div class="dropdown">
+    <span class="request__mimetype">application/json</span></div>
+</div>
+
+    <div id="body_78443bbf8bbe0cc75502983cb968e514applicationjson" class="body__content" >
+    <div class="body__content">
+
+
+
+
+<a href="#type_customer">Customer</a>
+<button type="button" class="btn--naked tooltip js-tooltip-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="tooltip_type_customer">
+	<span class="sr-only">Customer details</span>
+	<svg class="tooltip__icon" viewBox="0 0 16 16" aria-hidden="true"><g><path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M7.88888889,6.11262338 C7.39796911,6.11262338 7,6.51059249 7,7.00151227 L7,11.4459567 C7,11.9368765 7.39796911,12.3348456 7.88888889,12.3348456 C8.37980867,12.3348456 8.77777778,11.9368765 8.77777778,11.4459567 L8.77777778,7.00151227 C8.77777778,6.51059249 8.37980867,6.11262338 7.88888889,6.11262338 Z M7.88888889,3.44293218 C7.39796911,3.44293218 7,3.84090129 7,4.33182107 C7,4.82274084 7.39796911,5.22070996 7.88888889,5.22070996 C8.37980867,5.22070996 8.77777778,4.82274084 8.77777778,4.33182107 C8.77777778,3.84090129 8.37980867,3.44293218 7.88888889,3.44293218 Z"></path></g></svg>
+</button>
+</div>
+        <div class="definition-example">
+        <div id="bodySample_78443bbf8bbe0cc75502983cb968e514applicationjson" class="definition-example__title">
+            <span class="definition-example__mimetype">
+                    application/json</span>
+            </div>
+        <div role="region" tabindex="0" class="code-container" aria-labelledby="bodySample_78443bbf8bbe0cc75502983cb968e514applicationjson">
+
+
+	
+		<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;1920&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;LAST NAME&#34;</span><span class="p">:</span> <span class="s2">&#34;Khayati&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;MAIL&#34;</span><span class="p">:</span> <span class="s2">&#34;Sofiene.Khayati@agilos.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;PHONE&#34;</span><span class="p">:</span> <span class="s2">&#34;0465784646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;STREET_NUMBER&#34;</span><span class="p">:</span> <span class="s2">&#34;12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;CITY&#34;</span><span class="p">:</span> <span class="s2">&#34;Ixelles&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;DEPARTMENT&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;REGION&#34;</span><span class="p">:</span> <span class="s2">&#34;Brussels&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;COUNTRY&#34;</span><span class="p">:</span> <span class="s2">&#34;Belgium&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;POSTAL_CODE&#34;</span><span class="p">:</span> <span class="s2">&#34;1050&#34;</span><span class="p">}</span></span></span></code></pre></div></div>
+    </div>
+        </div>
+    </div>
+	<div class="definition__content definition">
+			<h4>Response</h4>
+		
+		
+				
+					
+
+<div class="response">
+	<details class="response__detail" open="">
+		<summary class="response__type"><span><span class="badge badge--2xx">200</span>Status 200</span><svg viewBox="0 0 16 16" aria-hidden="true" class="response__type--icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg></summary>
+		<div class="response-description wysiwyg">Customer Added</div>
+
+
+
+</details>
+</div>
+</div>
+	</div>
+	<div class="operation__content-info operation__content-info--odd">
+		
+<div class="try-in-tester js-try-in-tester">
+  <button class="try-in-tester__action js-try-in-tester--action btn btn--primary js-operation-try-in-tester try-in-tester__action--with-dropdown "
+          data-operation-id="27b45d47-012d-4316-989d-792cd3d439af" type="button">
+    Try in API Tester
+    (2)</button>
+  <button title="Select your endpoint" class="try-in-tester__dropdown js-dropdown btn btn--primary"
+    aria-controls="endpoints-list"
+    aria-label="Select your endpoint"
+    aria-haspopup="true"
+    aria-expanded="false"
+    type="button">
+      <svg viewBox="0 0 16 16" aria-hidden="true" class="dropdown__icon"><path d="M8 13.6l-8-8L2.6 3 8 8.4 13.4 3 16 5.6z"></path></svg>
+    </button>
+    <div id="endpoints-list"
+         role="menu"
+         class="dropdown__content dropdown__content--endpoints dropdown__content--endpoints-operation "
+         hidden>
+      <button title="https://2ig912ru1eka29u.eu.api-mocks.com"
+                data-endpoint-url="https://2ig912ru1eka29u.eu.api-mocks.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">https://2ig912ru1eka29u.eu.api-mocks.com</span></button>
+      <button title="http://www.das.com"
+                data-endpoint-url="http://www.das.com"
+                role="menuitem"
+                class="js-try-in-tester-endpoint dropdown__item dropdown__item--endpoints btn--naked"
+                type="button">
+          <span class="text--ellipsis dropdown__item--endpoints-url">http://www.das.com</span></button>
+      <a role="menuitem"
+         class="dropdown__item dropdown__item--endpoints-link-description"
+         href="#endpoints">
+        Go to endpoint descriptions</a>
+    </div>
+  </div>
+
+</div>
+</section>
+</section>
+<hr class="separator"/>
+    <section aria-labelledby="section_about">
+      <h2 id="section_about">About</h2>
+  
+
+<section id="text_designed-with-talend-api-designer_anchor" aria-labelledby="text_designed-with-talend-api-designer" class="definition">
+<h3 id="text_designed-with-talend-api-designer" >Designed with Talend API Designer</h3>
+<div class="wysiwyg"><strong>Designed with Talend API Designer</strong></div></section>
+</section>
+<span class="back-to-top-wrapper"><a class="back-to-top" href="#"><span class="sr-only">back to top</span>↑</a></span></main>
+    <footer class="footer">
+
+
+<span>API Portal</span>
+</footer>
+
+		
+
+<div tabindex="-1" role="dialog" aria-labelledby="modal-label" hidden id="try-in-tester-version-modal" class="modal__overlay js-close-modal">
+  <div role="document" class="modal__wrapper scrollable">
+    <h2 id="modal-label" class="modal__title">Talend API Tester upgrade is required</h2>
+    <div class="modal__content">
+      <p>Your Talend API Tester extension is in Version <strong id="js-current-version-tester"></strong>, but the minimum required version for this feature is <strong id="js-minimum-version-tester"></strong>.</p>
+      <a target="_blank" rel="noopener" href="https://help.talend.com/access/sources/content/topic?pageid=tester_update_extension&EnrichVersion=Cloud&afs:lang=en">
+        Learn more about API Tester<svg role="img" aria-label='Open in a new window' class="open-link-new-window-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M16 0v6h-2V3l-8.489 8.773-1.253-1.253L13 2h-3V0zm-4 10v4H2V4h4V2H0v14h14v-6z"></path>
+        </svg>
+      </a>
+    </div>
+    <button type="button" aria-label='Close modal' class="js-close-modal modal__close btn--naked">&times;</button>
+  </div>
+</div>
+<script type="module" src="../../../js/apis.min.0af8c111f772d278d2fbde38fa252ca44e9268c68955afb4aa5b85633382efb3.js"></script>
+		
+		<script type="module" src="../../../js/tryInTester.min.3429317c2b5f67d690fc7dc79759ee71803fb089dc3628fb584c21f3f2a782fd.js"></script>
+	</body>
+</html>

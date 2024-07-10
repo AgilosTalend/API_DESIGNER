@@ -1,0 +1,103 @@
+{
+  "version" : 6,
+  "entities" : [ {
+    "entity" : {
+      "type" : "Project",
+      "name" : "API_DEMO 1.0.0",
+      "description" : "No description",
+      "importedFrom" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
+    },
+    "children" : [ {
+      "entity" : {
+        "type" : "Service",
+        "name" : "Objects"
+      }
+    }, {
+      "entity" : {
+        "type" : "Service",
+        "name" : "Operations",
+        "description" : "Define operation that we can do with our API"
+      },
+      "children" : [ {
+        "entity" : {
+          "type" : "Request",
+          "id" : "92a3d96b-0a8c-4d09-9693-4a54e26b73de",
+          "name" : "List Customers",
+          "description" : "List All customers",
+          "uri" : {
+            "host" : "${\"BaseUrl\"}",
+            "path" : "/Customers"
+          },
+          "method" : {
+            "link" : "",
+            "name" : "GET"
+          },
+          "headers" : [ {
+            "enabled" : true,
+            "name" : "Accept",
+            "value" : "application/json"
+          } ],
+          "headersType" : "Form"
+        }
+      }, {
+        "entity" : {
+          "type" : "Request",
+          "id" : "27b45d47-012d-4316-989d-792cd3d439af",
+          "name" : "Add Customer",
+          "uri" : {
+            "host" : "${\"BaseUrl\"}",
+            "path" : "/Customer"
+          },
+          "method" : {
+            "link" : "",
+            "name" : "POST",
+            "requestBody" : true
+          },
+          "headers" : [ {
+            "enabled" : true,
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "headersType" : "Form",
+          "body" : {
+            "bodyType" : "Text",
+            "textBody" : "{\"ID\": \"1920\",\n\"NAME\": \"Sofiene\",\n\"LAST NAME\": \"Khayati\",\n\"MAIL\": \"Sofiene.Khayati@agilos.com\",\n\"PHONE\": \"0465784646\",\n\"STREET_NUMBER\": \"12\",\n\"CITY\": \"Ixelles\",\n\"DEPARTMENT\": \"Brussels\",\n\"REGION\": \"Brussels\",\n\"COUNTRY\": \"Belgium\",\n\"POSTAL_CODE\": \"1050\"}"
+          }
+        }
+      } ]
+    }, {
+      "entity" : {
+        "type" : "Service",
+        "name" : "About",
+        "description" : "Help"
+      }
+    } ]
+  } ],
+  "environments" : [ {
+    "name" : "API_DEMO 1.0.0",
+    "importedFrom" : {
+      "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
+    },
+    "variables" : {
+      "05150db7-e293-47b8-861a-0dc69a5ff23a" : {
+        "name" : "BaseUrl",
+        "value" : "https://2ig912ru1eka29u.eu.api-mocks.com",
+        "enabled" : true,
+        "private" : false
+      }
+    }
+  }, {
+    "name" : "API_DEMO 1.0.0",
+    "importedFrom" : {
+      "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
+    },
+    "variables" : {
+      "7cc7ba68-4742-4fc2-9062-5b558d305b1b" : {
+        "name" : "BaseUrl",
+        "value" : "http://www.das.com",
+        "enabled" : true,
+        "private" : false
+      }
+    }
+  } ]
+}
