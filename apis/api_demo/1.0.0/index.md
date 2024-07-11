@@ -29,6 +29,7 @@ api-definition:
       elementOrder:
       - "#/contract/resources/996b150e-082e-4681-9afd-969f2f2659ff"
       - "#/contract/resources/a027eb2e-0120-48b1-b978-0fa883747cfc"
+      - "#/contract/resources/b8604966-4a62-4326-b668-0d6c275c8a0b"
     - name: "About"
       description: "Help"
       elementOrder:
@@ -133,6 +134,38 @@ api-definition:
               "582859b3-b64f-4ec7-a392-37be19a01ef9":
                 status: "200"
                 description: "Customer Added"
+      b8604966-4a62-4326-b668-0d6c275c8a0b:
+        path: "/Customer/{ID}"
+        section: "#/contract/sections/577c3b7a-6fbf-4d34-b78f-cd87dc398789"
+        pathVariables:
+        - name: "ID"
+          type: "STRING"
+          required: true
+        operations:
+          b263f72d-18af-4c90-b4d7-1cc6f6f4aeec:
+            name: "Get One Custome"
+            method: "GET"
+            responses:
+              "66b888ad-b2bc-4e82-9a30-7d7f7dd09766":
+                status: "200"
+                description: "It ok"
+                bodies:
+                - type: "#/contract/types/be4cb0d4-957e-4fc0-83e0-af65db44b0d3"
+                  examples:
+                  - value: |-
+                      {"ID": "1234",
+                      "NAME": "Alice",
+                      "LAST NAME": "Khayati",
+                      "MAIL": "Sofiene.Khayati@agilos.com",
+                      "PHONE": "0465784646",
+                      "STREET_NUMBER": "11",
+                      "CITY": "Brussels",
+                      "DEPARTMENT": "Brussels",
+                      "REGION": "Brussels",
+                      "COUNTRY": "Belgium",
+                      "POSTAL_CODE": "1000"}
+                  mediaTypes:
+                  - "application/json"
     types:
       be4cb0d4-957e-4fc0-83e0-af65db44b0d3:
         name: "Customer"
@@ -309,6 +342,26 @@ api-tryin: |-
               "textBody" : "{\"ID\": \"1920\",\n\"NAME\": \"Sofiene\",\n\"LAST NAME\": \"Khayati\",\n\"MAIL\": \"Sofiene.Khayati@agilos.com\",\n\"PHONE\": \"0465784646\",\n\"STREET_NUMBER\": \"12\",\n\"CITY\": \"Ixelles\",\n\"DEPARTMENT\": \"Brussels\",\n\"REGION\": \"Brussels\",\n\"COUNTRY\": \"Belgium\",\n\"POSTAL_CODE\": \"1050\"}"
             }
           }
+        }, {
+          "entity" : {
+            "type" : "Request",
+            "id" : "b263f72d-18af-4c90-b4d7-1cc6f6f4aeec",
+            "name" : "Get One Custome",
+            "uri" : {
+              "host" : "${\"BaseUrl\"}",
+              "path" : "/Customer/{ID}"
+            },
+            "method" : {
+              "link" : "",
+              "name" : "GET"
+            },
+            "headers" : [ {
+              "enabled" : true,
+              "name" : "Accept",
+              "value" : "application/json"
+            } ],
+            "headersType" : "Form"
+          }
         } ]
       }, {
         "entity" : {
@@ -324,7 +377,7 @@ api-tryin: |-
         "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
       },
       "variables" : {
-        "77a530cf-883d-4b17-b9f9-6f6c5a77f48b" : {
+        "ba83465a-7c7e-498e-8e84-4aa04a834d84" : {
           "name" : "BaseUrl",
           "value" : "https://2ig912ru1eka29u.eu.api-mocks.com",
           "enabled" : true,
@@ -337,7 +390,7 @@ api-tryin: |-
         "projectId" : "3d54d70e-dd2f-4bb5-b2b8-b8fb3215a10d"
       },
       "variables" : {
-        "335e924c-d31b-4e9f-b2a8-6df5261236d3" : {
+        "bf49d988-02bf-4ac6-bc00-0e3b2ac86e56" : {
           "name" : "BaseUrl",
           "value" : "http://www.agilos.com",
           "enabled" : true,
