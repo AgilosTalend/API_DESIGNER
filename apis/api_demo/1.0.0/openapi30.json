@@ -52,6 +52,32 @@
           }
         }
       }
+    },
+    "/Customer/{ID}" : {
+      "get" : {
+        "summary" : "Get One Custome",
+        "responses" : {
+          "200" : {
+            "description" : "It ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer"
+                },
+                "example" : "{\"ID\": \"1234\",\n\"NAME\": \"Alice\",\n\"LAST NAME\": \"Khayati\",\n\"MAIL\": \"Sofiene.Khayati@agilos.com\",\n\"PHONE\": \"0465784646\",\n\"STREET_NUMBER\": \"11\",\n\"CITY\": \"Brussels\",\n\"DEPARTMENT\": \"Brussels\",\n\"REGION\": \"Brussels\",\n\"COUNTRY\": \"Belgium\",\n\"POSTAL_CODE\": \"1000\"}"
+              }
+            }
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "ID",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
     }
   },
   "components" : {
